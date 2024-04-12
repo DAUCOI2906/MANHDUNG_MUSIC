@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD MUSiC</title>
+    <link rel="stylesheet" href="css/man.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="waraper">
+        <div class="app">
+            <div class="head">
+                <div class="header">
+                    <div class="header_menu_tab"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="header_name_song">
+                        <p id="nowplaying">Now playing</p>
+                        <marquee id="playsong" scrolldelay="100" direction="left"></marquee>
+                    </div>
+                    <div class="header_add_song"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="image_song">
+                    <img src="https://th.bing.com/th/id/R.18f456edf37a0d894ac5562540bca5ca?rik=QLttwNBJSScgRg&pid=ImgRaw&r=0"
+                        alt="">
+                </div>
+
+
+                <div class="time_song">
+                    <span id="timeplaying">
+                        <span id="minute">0</span>:<span id="second">0</span>
+                    </span>
+                    <div class="slive">
+                        <input type="range" value="0" min="0" max="100" step="1" id="time_line">
+                        <progress min="0" max="100" value="0" id="process"></progress>
+                    </div>
+                    <span id="timesong">
+                        <span id="minute">0</span>:<span id="second">0</span>
+                    </span>
+                </div>
+
+
+
+                <audio id="audio" src="unknow"></audio>
+                <div class="control_song">
+                    <div class="reload"><i class="fa-solid fa-repeat"></i></div>
+                    <div class="backward"><i class="fa-solid fa-backward"></i></div>
+                    <div class="pause">
+                        <div class="pause_pause close">
+                            <i class="fa-solid fa-pause"></i>
+                        </div>
+                        <div class="pause_play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="next"><i class="fa-solid fa-backward"></i></div>
+                    <div class="random"><i class="fa-solid fa-shuffle"></i></div>
+                </div>
+            </div>
+            <ul class="list_song">
+                <!-- <li class="list_song_item">
+                    <div class="list_song_item--image">
+                        <img src="https://th.bing.com/th/id/OIP.y6dMp7sIOr8TkHQSPONVTgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="">
+                    </div>
+                    <div class="list_song_item--info">
+                        <p id="name_song">Chúng ta của hiện tại</p>
+                        <p id="author">Sơn Tùng MTP</p>
+                    </div>
+                    <div class="list_song_item--multi">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="navi_bar">
+                <div class="bar_home">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="bar_music">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="bar_play">
+                    <i class="fa-solid fa-circle-play"></i>
+                </div>
+                <div class="bar_search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="bar_menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
