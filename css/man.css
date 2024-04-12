@@ -280,6 +280,9 @@ display: none;
 
 #name_song {
     font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #author {
